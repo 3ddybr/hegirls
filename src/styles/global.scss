@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", "sans-serif";
+  list-style: none;
+  border: 0;
+  outline: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #ffc9c9;
+}
+
+a,
+button,
+img {
+  cursor: pointer;
+}
+a {
+  color: inherit; // poe a cor do link a mesma do elemento pai
+  text-decoration: none; //tirar o underline dos links
+}
+
+h1 {
+  color: #7d3737;
+}
