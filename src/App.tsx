@@ -6,7 +6,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import Card from "./components/Card";
+import Card1 from "./components/Card1";
+import Card2 from "./components/Card2";
+import Card3 from "./components/Card3";
+import Card4 from "./components/Card4";
 import Header from "./components/Header";
 
 import "./styles/app.scss";
@@ -23,25 +26,43 @@ function App() {
             // navigation
             pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}
-            // spaceBetween={50}
-            slidesPerView={2.5}
+            spaceBetween={10}
+            slidesPerView={1}
             loop={true}
             autoplay={{
               delay: 8000,
               disableOnInteraction: false,
             }}
+            breakpoints={{
+              440: {
+                slidesPerView: 1.5,
+                spaceBetween: 5,
+              },
+              640: {
+                slidesPerView: 2.5,
+                spaceBetween: 5,
+              },
+              768: {
+                slidesPerView: 2.5,
+                spaceBetween: 5,
+              },
+              1200: {
+                slidesPerView: 2.5,
+                spaceBetween: 5,
+              },
+            }}
           >
             <SwiperSlide>
-              <Card />
+              <Card1 />
             </SwiperSlide>
             <SwiperSlide>
-              <Card />
+              <Card2 />
             </SwiperSlide>
             <SwiperSlide>
-              <Card />
+              <Card3 />
             </SwiperSlide>
             <SwiperSlide>
-              <Card />
+              <Card4 />
             </SwiperSlide>
           </Swiper>
         </main>
