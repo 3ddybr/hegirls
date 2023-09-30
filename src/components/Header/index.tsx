@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
 
 import "./styled.scss";
@@ -7,7 +8,9 @@ export default function Header() {
     <>
       <div id="containerHeader">
         <div id="contentHeader">
-          <img id="logoImgHeader" src={logo} alt="Logo Brechós he-girls" />
+          <Link to="/">
+            <img id="logoImgHeader" src={logo} alt="Logo Brechós he-girls" />
+          </Link>
         </div>
       </div>
     </>
