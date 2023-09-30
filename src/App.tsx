@@ -7,6 +7,7 @@ import Header from "./components/Header";
 
 import "./styles/app.scss";
 import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <main id="mainApp">
           <Outlet />
         </main>
+        <Footer />
       </div>
     </>
   );
