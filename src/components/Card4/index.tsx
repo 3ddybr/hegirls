@@ -12,13 +12,16 @@ import img2 from "../../assets/brecho4/img2.jpeg";
 import img3 from "../../assets/brecho4/img3.jpeg";
 import img4 from "../../assets/brecho4/img4.jpeg";
 import img5 from "../../assets/brecho4/img5.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Card4() {
   return (
     <>
       <div id="containerCard">
         <div id="contentCard">
-          <h1>Brechó da Semi Ruiva</h1>
+          <Link to="/brecho4">
+            <h1>Brechó da Semi Ruiva</h1>
+          </Link>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             navigation

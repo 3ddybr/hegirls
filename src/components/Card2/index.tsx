@@ -9,13 +9,16 @@ import "swiper/css/scrollbar";
 
 import img1 from "../../assets/brecho2/img1.jpeg";
 import img2 from "../../assets/brecho2/img2.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Card2() {
   return (
     <>
       <div id="containerCard">
         <div id="contentCard">
-          <h1>Brechó Soraya</h1>
+          <Link to="/brecho2">
+            <h1>Brechó Soraya</h1>
+          </Link>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             navigation

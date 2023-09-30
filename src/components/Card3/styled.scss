@@ -16,13 +16,16 @@
   justify-content: center;
   flex-direction: column;
   max-width: 40rem;
-  max-height: 40rem;
+  // max-height: 40rem;
 
   padding: 0.5rem;
 
   // border: 1px solid red;
 
   // overflow: hidden;
+  h1 {
+    padding: 2rem;
+  }
 }
 
 .imgCard {

@@ -1,18 +1,12 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import Card1 from "./components/Card1";
-import Card2 from "./components/Card2";
-import Card3 from "./components/Card3";
-import Card4 from "./components/Card4";
 import Header from "./components/Header";
 
 import "./styles/app.scss";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
@@ -21,50 +15,7 @@ function App() {
         <Header />
         <h1>Encontre um Brechó e economize no seu look</h1>
         <main id="mainApp">
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            // navigation
-            pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
-            spaceBetween={10}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{
-              delay: 8000,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              440: {
-                slidesPerView: 1.5,
-                spaceBetween: 5,
-              },
-              640: {
-                slidesPerView: 2.5,
-                spaceBetween: 5,
-              },
-              768: {
-                slidesPerView: 2.5,
-                spaceBetween: 5,
-              },
-              1200: {
-                slidesPerView: 2.5,
-                spaceBetween: 5,
-              },
-            }}
-          >
-            <SwiperSlide>
-              <Card1 />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card2 />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card3 />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card4 />
-            </SwiperSlide>
-          </Swiper>
+          <Outlet />
         </main>
       </div>
     </>
