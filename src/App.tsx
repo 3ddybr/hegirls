@@ -14,7 +14,7 @@ function App() {
     <>
       <div id="containerApp">
         <Header />
-        <h1>Encontre um Brechó e economize no seu look</h1>
+        <h1>Seu look na palma da mão</h1>
         <main id="mainApp">
           <Outlet />
         </main>
